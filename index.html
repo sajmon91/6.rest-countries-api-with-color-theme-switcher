@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Rest Countries</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- Title and Dark Mode Btn -->
+    <div class="title-btn-container">
+      <div class="title-btn-wrapper width-class">
+        <h3>Where in the world ?</h3>
+        <button class="dark-mode-btn"><i class="far fa-moon"></i> Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Countries List Container-->
+    <div class="countries-list-container">
+
+      <!-- Search Field and DropDown -->
+      <div class="search-dropDown-container width-class">
+        <div class="search-by-name-wrapper">
+          <i class="fas fa-search"></i>
+          <input type="text" name="country" placeholder="Search for a country..." id="searchCountry">
+        </div>
+        <div class="dropDown-wrapper">
+          <button class="dropDown-region-btn">Filter By Region <i class="fas fa-chevron-down"></i></button>
+          <div class="regions-menu">
+            <button data-region="africa" class="region-btn">Africa</button>
+            <button data-region="americas" class="region-btn">America</button>
+            <button data-region="asia" class="region-btn">Asia</button>
+            <button data-region="europe" class="region-btn">Europe</button>
+            <button data-region="oceania" class="region-btn">Oceania</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Countries Cards -->
+      <div class="countries-cards-container width-class"></div>
+
+    </div>
+
+
+    <!-- Single Country Container -->
+    <div class="single-country-container width-class">
+      <div class="single-country-btns">
+        <button class="back-btn"><i class="fas fa-long-arrow-alt-left"></i> Back</button>
+        <button class="home-btn"><i class="fas fa-home"></i> Home</button>
+      </div>
+
+      <!-- Single Country Details -->
+      <div class="single-country-big-wrapper"></div>
+    </div>
+  </main>
+
+  <!-- Back To Top Btn -->
+  <button id="back-top-btn"><i class="far fa-arrow-alt-circle-up"></i></button>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
